@@ -10,25 +10,22 @@
  * 4 - Faça um teste criando dois objetos da classe CartaoDeCredito. 
  * Altere e exiba no Console os valores armazenados nos atributos desses objetos.
  * 
- * Exercícios de agregação, associação e composição
- * 1 - Defina um vínculo entre os objetos que representam os clientes e os objetos que representam os cartões de crédito. Para isso, você deve alterar a classe CartaoDeCredito.
-
-CartaoDeCredito
-    numero
-    dataDeValidade
-  Cliente cliente
+ * 
+ * // Para incluir outras classes
+// require_once('Cliente.php' ); ou spl_autoload_register();
  */
+spl_autoload_register();
 
 class CartaoDeCredito{
     
     public $numero;
     public $dataDeValidade;
-    
 }
 
 $cartao1 = new CartaoDeCredito;
 $cartao1->numero = "5536 3602 2085 4707";
 $cartao1->dataDeValidade = "03/2024";
+$cartao1->$cliente = Cliente.$cliente;
 
 echo "Numero do Cartao de Credito: $cartao1->numero\n";
 echo "Validade: $cartao1->dataDeValidade" .PHP_EOL;
